@@ -1,0 +1,71 @@
+Python day 2
+
+Operators
+1.arithmetic operators :- it is used for mathematical operators
+—————————
+——>+ ,— , * ,/ ,** ,// ,%
+Eg—>
+a=20
+B=5
+print(a + b)
+
+2.assignment operators
+——————
+——>=, += ,-= , *= , %=
+
+a=20
+a=+20 #a=*4
+print(a)
+
+3.comparison operators
+———————
+——>eg:- <,> ,== ,<= ,>=
+
+a=20
+   b=5
+   print(a==b)
+   print(a!=b)
+   print(a<=b)
+   print(a>=b)
+
+4.logical operators
+——————-
+And, or , not 
+ And---> returns true if both are true
+  Or——> returns true if any one is true 
+  not---> reverse the output
+Eg—>
+a = 20
+b=7
+c=80
+Print(a>=b and b<=c)
+print(
+
+5.identity operators
+—————-
+—> is , is not .
+is—>checks same object or not.
+Is not—>checks whether it is not the same object 
+    a=20
+    b=20
+    print(a==b)
+    print(a is b)
+    print(a is not b). 
+
+6.Membership operators 
+—————-
+—>in , in not 
+
+Eg:-
+  a=[1,2,3,4,5]
+print(20 not in a) 
+ 
+
+7.Bitwise operators 
+——————-
+—> &, << , >>, |, ^
+‘’’
+print(5 & 7)
+print(5 | 3)
+
+    
