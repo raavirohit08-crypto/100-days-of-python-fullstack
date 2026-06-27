@@ -1,0 +1,138 @@
+
+                                                                                           day 5
+                                                                                            -----
+'''
+dictionsries
+-----
+-->dict is a key : value pair seperated by:,and are unique
+-->in the place of keys we have use immutable data type..
+
+detail_={"name":"rohith",
+           "mob":1233554488",
+
+methods
+------
+1.keys()
+-->used to get all keys from the dictionary
+syntax:-var_name.keys()
+
+eg:-
+details_={"name":"rohit",
+        "age":21,
+        "gender":"male"
+print(details_.keys())
+
+2.values()
+
+-->used to get all the value from the dictionary.
+syntax:-var_name.value()
+eg:-
+details_={"name":"rohit",
+        "age":21,
+        "gender":"male"
+print(details_.values())
+
+3.items()
+
+-->used to get all the value from the dictionary.
+syntax:-var_name.items()
+eg:-
+details_={"name":"rohit",
+        "age":21,
+        "gender":"male"
+print(details_.items())
+
+4.clear()
+
+-->if we use the clear()method the dictionary will be empty.
+
+details_={"name":"rohit",
+        "age":21,
+        "gender":"male"
+print(details_.clear())
+
+5.update()
+
+-->it updates or replace the old value of the key with the new value.
+eg:
+
+details_={"name":"rohit",
+        "age":21,
+        "gender":"male"
+        details.update{{"name":"rohit"}}
+        details.update{{"mobile":6301690685}}
+print(details_.update())
+
+                                                                                      set
+                                                                                      ----
+sets
+----
+->set is collection unordered elements that are seperated by,
+->set is muttable
+->can remove duplicate value by itself.
+
+eg:-
+eg:
+ go={1,2,3,4}
+ print(go)
+
+Methods
+_____
+
+1.⁠ ⁠union()(|)
+
+--> used to combine the elements from both sets.
+    syntax : set1.union(set2)
+eg:
+ go={1,2,3,4}
+ so={5,6,7,3,4}
+ print(go|so)
+ print(go.union(so))
+
+2.⁠ ⁠intersection() &
+
+--> common elements from both sides .
+    syntax : set1.interaction(set2)
+
+
+eg:
+ go={1,2,3,4}
+ so={5,6,7,3,4}
+ print(go & so)
+ print(go.intersection(so))
+
+3.⁠ ⁠symmetric diffrence() ^
+
+--> all different elements from both sets.
+    syntax : set1.symmetric_difference(set2).
+
+eg:
+ go={1,2,3,4}
+ so={5,6,7,3,4}
+ print(go ^ so)
+ print(go.symmetric_diffrence(so))
+
+4.⁠ ⁠add()
+--> used to add new elements into set.
+
+eg:
+ go={1,2,3,4}
+ go.add(5)
+ print(go)
+
+ 5.remove()
+ ----------
+ -->to del the elements from set
+ eg;
+ 
+  go={1,2,3,4}
+ go.remove(3)
+ print(go)
+                                                                          
+
+
+
+
+
+
+            
