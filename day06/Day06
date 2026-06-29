@@ -1,0 +1,72 @@
+'''
+                                                                                                   day06
+                                                                                            ----------------
+ type conversions
+ ---------------
+
+--> this is the process of converting one data type into another .
+
+
+--> int - string,float.
+eg:
+ num=89
+ num2=float(num
+ print(num2)
+ print(type(num))
+ word=str(num)
+ print(word)
+
+--> float - string,integer.
+ eg:
+  num=8.9
+  how=str(num)
+  print(how)
+  print(type (how))
+  flo=int(num)
+  print(flo)
+ 
+--> string - integer,float,list,tuple.
+ eg:
+  hai="78"
+  num=int(hai)
+  pritn(num+10)
+  hello="67.89"
+  num2=float(hello)
+  print(num2+num)
+
+  any="23456"
+  con=list(any)
+  print(con)
+  con1=tuple(any)
+  print(con1)
+
+
+--> list - string,tuple,dictionary.
+ eg:
+  num=["p",'y','t','h','o','n']
+  con="".join(num)
+  print(con)
+  some=tuple(num)
+  print(num)
+
+  pyth=[("a",1),('b',8)]
+  conv=dict(pyth)
+  print(conv)
+
+  --> tuple - string,list
+
+eg :
+ fam=(1,2,3,4)
+ print(list(fam))
+ tup=('b','h','a','r','a','t')
+ text="".join(tup)
+ print(text)
+
+
+Built in functions
+
+1.⁠ ⁠str()
+2.⁠ ⁠float()
+3.⁠ ⁠int()
+4.⁠ ⁠list()
+5.⁠ ⁠dict()
