@@ -1,0 +1,92 @@
+'''                                                                                 Day 9
+                                                                                    _ _
+
+Loops
+___
+
+1.⁠ ⁠For loop :
+-->a for loop s used to itterate over a squence,list,tuple,dict
+eg :
+
+any="python is a language"
+for j in any:
+     print(j)
+        
+
+any_={"name":"bharat","role":"trainee"}
+for key in any_.keys():
+    print(key)
+
+ 2.⁠ ⁠while:
+--> the while loop will execute until the condition becomes true.
+eg :i=1
+  while i <5:
+      pritn(i)
+ 
+ eg:
+  i=1
+  while i <5:
+      pritn(i)
+      i+=1   
+
+else in for loop :
+__ _ __ __
+-->the else block will be excuted after the for loop,but incase the loop is breaked then it will never enter
+
+any_3=[1,2,3,4,5]
+for i in any_3:
+    print(i)
+else:
+     print("end of loop")    
+     
+
+                                                                                        Control statements:
+
+1break
+ --> the break is used to exit from the loop.
+ eg:
+  any=[1,2,3,4,5]
+     for j in any:
+          print(j)
+        if j==3:
+           break
+     else:
+         print("entered")
+
+2.⁠ ⁠continue:
+  --> the continue will skip the current itteration.
+  
+  eg:
+any=[1,2,3,4,5]
+for j in any:
+    if j==3:
+        continue
+       print(j)
+       else:
+        print("entered")
+
+3.pass
+------
+-->space holder
+eg:-
+any_=[1,2,3,4,5]
+for j in any_:
+pass
+
+range()
+------
+-->range() is a in-built function that is used to generate a squence upto a limit
+syntax:-range(start,end,step)
+eg:
+all_=[1,2,3,4,5]
+for j in range(20):
+print(j)
+
+assert keyword
+-----------
+-->it will used to check the condition,but it will raise an error incase it is false...
+'''
+age=int(input("enter your age:"))
+assert age >=18,"you must have 18 years"      
+
+
