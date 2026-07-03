@@ -1,0 +1,92 @@
+'''
+1.prime num(single)
+generating prime num
+
+
+num=int(input("enter a number:"))
+count=0
+for j in range(1,num+1):
+    if num % j ==0:
+        count+=1
+        print(count)
+if count==2:
+    print(f"{num} is a prime")
+else:
+    print(f"{num} is not a prime")
+
+
+limit_=100
+for j in range(1,limit_+1):
+    count=0
+    for i in range (1,j+1):
+        if j % i==0:
+            count+=1
+    if count==2:
+        print(f"{j} is a prime")
+
+
+num=6
+for j in range(1,num+1):
+    for i in range(1,j+1):
+        print("*", end=" ")
+    print()
+
+
+
+num=6
+for j in range(1,num+1):
+    for i in range(1,j+1):
+        print(j, end=" ")
+    print()
+
+
+
+num=6
+for j in range(1,num+1):
+    for i in range(1,j+1):
+        print(i, end=" ")
+    print()
+
+
+num=4
+count=0
+for j in range(1,num+1):
+    for i in range(1,j+1):
+        count+=1
+        print(count, end=" ")
+    print()
+
+num=4
+count=0
+for j in range(num,0,-1):
+    for i in range(1,j+1):
+        count+=1
+        print(i, end=" ")
+    print()
+
+
+am_str=int(input("enter a number:"))
+length_=len(str(am_str))
+all_sum=-0
+for j in str(am_str):
+    all_sum+=int(j)**length_
+if all_sum==am_str:
+    print(f"{am_str} is amstrong")
+else:
+    print(f"{am_str} is not a amstrong")
+
+    
+
+'''
+num=10
+for j in range(num):
+    print("1" *(num -j -1),end="")
+    print("*" *(2 * j + 1))
+
+
+
+        
+
+    
+        
+
