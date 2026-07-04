@@ -1,0 +1,69 @@
+#DAY-11
+'''                                                                                   
+so="rohith"
+empty_=""
+for j in so:
+    empty_=j+empty_
+    if empty_==so:
+        print(f"{so}plaindrom")
+    else:
+        print(f"{so}is not plaindrom")
+
+num=0
+num_2=1
+limit_=int(input("enter a number:"))
+print(num,num_2,end=" ")
+for i in range(1,limit_+1):
+    all_=num+num_2
+    num=num_2
+    num_2=all_
+    print(all_,end=" ")
+
+val_=int(input("enter number:"))
+val_2=int(input("enter number:"))
+user_in=int(input("enter \n1.add \n2.sub \n3.mul \n4.pow:"))
+if user_in==1:
+    print(val_+val2)
+elif user_in==2:
+    print(val_ -val_2)
+elif user_in==3:
+    print(val_*val_2)
+else:
+    print(val_**val_2)
+
+
+#table:-
+
+table_=int(input("enter a number:"))
+for val in range(1,11):
+    print(f"{table_}x{val}={table_*val}")
+
+
+perfect num
+--->
+
+num=int(input("enter a number:"))
+sum_=0
+for j in range(1,num):
+        if num%j==0:
+            sum_+=j
+if sum_==num:
+     print(f"{num}is a perfect num")
+else:
+    print(f"{num}not a perfect num")
+
+'''
+
+details_={"name":"rohit",
+          "atm pin":"6332",
+          "balance":500000}
+print("welcome to atm")
+pin=input("enter your only 4 digits pin")
+if len(atm pin)==4:
+     user=input("\n1.withdraw \n2.balance \n3.deposit")
+else:
+    print("enter a valid atm pin")
+    
+    
+ 
+                                                                                       
