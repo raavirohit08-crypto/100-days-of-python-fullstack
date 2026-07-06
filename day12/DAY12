@@ -1,0 +1,103 @@
+'''                                                                                                #functions
+
+--->functions is a block of code that can be reusable
+--->function can avoid the repeated line of code...
+
+functions of 2 type:-
+-------------
+1.built-in
+eg-->print(),max(),type(),min(),sum()
+
+2.user-define
+------------
+-->this function starts with a keyword(def)
+
+def fun_name(parameters)
+    -----------
+    ----------
+    ------------
+fun_name(arguments)
+
+
+def add():
+    print("rohit")
+add()
+
+
+types of arguments:-
+--------------
+
+1.requred arguments
+----------------
+-->we have to pass same number arguments with defination of the function
+eg:-
+def add(a,b):
+    print(a)
+add(2)
+
+2.default
+--------
+-->
+eg:-
+
+num=93
+num_1=69
+num_2=46
+def add(a,b,c):
+   print(a)
+   print(b)
+   print(c)
+add(num,num_2,num_3)
+
+3.keyword
+-------
+-->we can pass as a pair like (variable=datatype)
+eg:-
+
+def add(a,b):
+    print(a+b)
+add(a='raavi',b='rohit')
+
+4.variable length
+--------------
+-->can pass n number agrument and just use (*args) in the parameters,will recevie tuple of arguments
+eg:-
+num=93
+num_1=69
+num_2=46
+num_3="rohit"
+def add(*a):
+    print(a)
+add(num,num_2,num_3)
+eg:-
+def all_(**any):
+    print(any['age'])
+all_(name="rohit",age=21)
+
+global variable:-
+------------
+-->this global variable can be used through out the functions and also outside the function too..
+eg:-
+num=9
+def func_():
+print(num)
+func_()
+
+local variable:-
+--->if can be used within the function only it cannot be used in the outside the function.
+note
+----
+-->to change the global variable by using keyword (global)that can change completly inside and outside of the function
+eg:-
+'''
+num=9
+def func_():
+    global num
+    num=89
+    print(num)
+func_()
+print(num)
+
+
+
+
