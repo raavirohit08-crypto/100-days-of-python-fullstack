@@ -1,0 +1,51 @@
+#passing by value
+'''
+a=(1,2,3)
+def some(a):
+    for j in a:
+        print(j)
+some(a)
+
+#return keyword
+-------------
+-->in a function if return is executed then it will exit from the function with cretain returned values
+eg:-
+def myfunc_(b):
+    return 5+b
+a=myfunc_(10)
+c=myfunc_(200)
+print(a)
+print(c)
+
+
+import builtins
+builtins_functions=[
+    name for name in dir(builtins)
+    if callable(getattr(builtins,name))]
+print(builtins_functions)
+print(f"total built-in functions are{len(builtins_functions)}")
+
+#recursive function
+-----------------
+-->recursive function that calls itself repeatedly until specified condition is met.
+
+syntax: def func_name(parameter)
+            if condition:--> base case
+                return statement
+            else:
+                return statement
+        print(func_name(arguments))
+
+'''
+def func_name(num):
+    if num==1:
+        return 1
+    else :
+        return num*func_name(num-1)
+
+num=1
+print(func_name(num))
+
+
+
+    
