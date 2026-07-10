@@ -1,0 +1,115 @@
+#generators
+'''
+-->this generator is special function that returns the itertor.insted of returing
+all the values at once..
+-->here we are going to use yield keyword
+eg:-
+def some():
+    yield 1
+    yield 2
+    yield 3
+so = some ()
+print(next(so))
+print(next(so))
+print(next(so))
+
+working of generator
+-------------------
+-->when a function is called
+-->it does not excute the function immediately...
+-->it will returns the generator object
+-->then the function will pauses at each yield..
+-->when the next() is called again, excution resume from where it stoped
+
+eg:-
+def demo():
+    print("start")
+    yield 1
+
+    print('middle')
+    yield 2
+
+    print('end')
+    yield 3
+how=demo()
+print(next(how))
+print(next(how))
+
+with generator
+-------------
+eg:-
+def how(so):
+    for i in range(so):
+        yield i*i
+any_=how(5)
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+
+without generator
+----------------
+eg:-
+def sqt(n):
+    for j in range(n):
+        print(j*j)
+sqt(5)
+
+function
+______
+
+--> return
+--> return complete result
+--> function will end after the return the value
+--> more memory usage
+--> this function never resume
+
+generator
+_______
+
+--> yield
+--> return one value every yield
+--> pauses after every yield
+--> less memory usage
+--> resume after next()
+
+yield keyword
+-----------
+-->this will produces the value
+-->but the yield pauses the function
+-->and yield will save the functions current state
+-->yield will continues where it stoped...
+
+next() keyword
+--------------
+-->the next() function is used to retrieve the next value from a generator
+eg:-
+def how(so):
+    for i in range(so):
+        yield i*i
+any_=how(5)
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+
+stopiteration
+-------------
+-->calling next() function after all values retrieve then it will raise
+stopiteration exception
+eg:-
+def how(so):
+    for i in range(so):
+        yield i*i
+any_=how(5)
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+
+'''
+
