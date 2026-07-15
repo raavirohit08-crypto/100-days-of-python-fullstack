@@ -1,0 +1,55 @@
+'''
+#oops
+----
+-object-oriented programming system (oops),this will be organizes the
+code using classes and objects
+
+use
+---
+-code resable
+-easy maintance
+-clear understanding
+-better security
+
+
+#classes
+------
+classes is blue-print or a template used to create an object...
+
+class batch_4:
+    pass
+
+#object
+------
+-object is a instance of the class
+
+class student:
+    studn='rohit'
+st_=student()
+print(st_)
+    
+#attributes
+-------
+-attributes are the variable that belongs to an object or the class
+eg:-
+class how:
+    def details(self,name,age):
+        self.name=name
+        self.age=age
+    
+s1=how()
+s1.details('rohit',69)
+print(s1.name)
+
+#methods
+-------
+-methods are nothing but,the functions inside the class
+'''
+class calculator:
+    def add(self,num,num_2):
+        print(num+num_2)
+
+    def sub(self,num,num_2):
+        print(num+num_2)    
+cal=calculator()
+cal.sub(45,6)
