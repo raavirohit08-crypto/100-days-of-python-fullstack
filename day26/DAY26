@@ -1,0 +1,112 @@
+'''
+                                                                                               Day 26
+                                                                                               ___ __
+
+File Handling
+____ ________
+
+File handling is an object that gives more options like creating , updating, and two ways to open a file...
+
+1. open()
+
+syntax:
+
+do =open('file_name','mode')
+----
+-----
+---
+close()
+
+
+eg:
+
+do = open('shankarbio.txt','r')
+print(do.read())
+
+
+2. with(keyword)
+
+syntax:
+
+with open('file_name','mode') as do:
+
+with open('shankarbio.txt','r') as do:
+    print(do.read())
+
+Modes
+_____
+
+r--> used to read the file, incase if the file doesnt exist it will raise error.
+
+eg:
+with open('shankarbio.txt','r') as do:
+    print(do.read())
+
+w--> used to write the text inside the file and it will overide the text inside file.
+     Incase if the file is not present it will create a new file with name given.
+eg:
+
+with open('shankarbio.txt','w') as do:
+    print(do.write('he is bosedk'))
+
+with open('shankardk.txt','w') as do:
+    print(do.write('he is bosedk'))
+    
+a--> this is used to add the text at last position inside the file .
+
+eg:
+
+with open('shankardk.txt','a') as do:
+    print(do.write('he is jaffa'))
+
+x--> used to create a new by adding the insidethe file, incase if the file is present
+     it will raise an error ..
+     
+eg:
+with open('shankardk.txt','x') as do:
+    print(do.write('he is jaffa'))
+write()
+_______
+
+--> the function is used to add the text inside a file or update a file with new text.
+
+eg:
+with open('shankarbio.txt','w') as do:
+    print(do.write('he is bosedk'))
+
+with open('shankardk.txt','a') as do:
+    print(do.write('he is jaffa'))
+
+
+read()
+______
+
+--> this function is used to read the file and this read() will read file chunk by chunk..
+     we can also specify the size .
+     
+eg:
+with open('shankarbio.txt','r') as do:
+    print(do.read())
+
+with open('shankarbio.txt','r') as do:
+    print(do.read(10))
+
+
+readline()
+__________
+
+--> this readline() function will read only one line at a time..
+
+eg:
+with open('shankarbio.txt','r') as do:
+    print(do.readline())
+
+readlines()
+___________
+
+--> this function will read whole file and give it in a list each line in one index in that list.
+
+eg:
+
+with open('shankarbio.txt','r') as do:
+    print(do.readlines())    
