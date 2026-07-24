@@ -1,0 +1,144 @@
+'''
+from datetime import datetime
+current_ = datetime.now()
+print(current_)
+print(current_.strftime('%Y'))
+print(current_.strftime('%M'))
+print(current_.strftime('%D'))
+print(current_.strftime('%y'))
+print(current_.strftime('%m'))
+print(current_.strftime('%d'))
+
+print(current_.strftime("%H:%M:%S"))
+
+
+
+
+from datetime import datetime, date
+current_ = datetime.now()
+today = date.today()
+now = datetime.now()
+# print(today)
+# print(now)
+
+print(current_.strftime("%d/%m/%Y %H:%M:%S"))
+
+print(current_.strftime("%Y"))
+
+%d-->day in the month.
+
+%m-->month in the year.
+
+%y-->year
+
+%h-->hour
+
+%m-->minute
+
+%s-->second
+
+%i-->12 hour clock
+
+%p-->AM or pm.
+
+import calendar
+
+#print(calendar.month(2026,))
+print(calendar.month(2026,7))
+print(calendar.weekday(2026,7,24))
+print(calendar.isleap(2026))
+
+data analysis
+---------
+-->clean the data
+-->transfer the data
+
+1.what is data analysis?
+----------
+data analysis is the process of inspecting,cleaning,transform
+and modeling data to discover useful insights,support decision
+-making and identify patterns .it is widely used in industrise such as
+finance,healthcare,marketing and technology.
+
+types of Data analysis
+_____ __ ____ ________
+1. Descriptive Analysis - summarizing data
+(eg: average sales per month)
+
+2> Diagnostic analysis - understanding causes.
+(eg: why sales dropped)
+
+3. pedictive analysis - Forecasting future outcomes.
+(eg: predicting customer churn)
+
+4. prescriptive analysis - suggesting actions based on data
+(eg: best marketing strategies).
+
+numpy
+----
+-->numpy is a library in python which is known as numarical python
+-->this numpy have different diamentinal array such as
+1D,2D,3D
+-->to used the numpy we have to import library as
+import numpy as np
+
+eg
+--
+import numpy as np
+arr_1=np.array([[1,2,3,],[4,5,6],[7,8,9]])
+print(arr_1)
+
+Indexing in array
+________ ___ _____
+
+--> as we used indexing in the list or tuple , here the way it works.
+
+--> by calling index position from array , we will get the value.
+
+--> and negative indexing also will work.
+
+eg:
+__
+import numpy as np
+arr_1=np.array([1,2,3,4])
+print(arr_1[:2])
+
+import numpy as np
+arr_1=np.array([1,2,3,4])
+print(arr_1.sum())
+print(arr_1.mean())
+print(arr_1.max())
+print(arr_1.min())
+
+import numpy as np
+arr_1=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr_1.shape())
+
+
+Pandas
+______
+
+--> pandas is a powerful python library and this is built on the top of numpy.
+
+--> by using pandas data manipulaion will be done ...
+
+--> pandas have data structurres like series and dataframes .
+
+--> to use pandas we have to import library " import pandas as pd"
+
+import pandas as pd
+
+data = pd.series(
+    [2000,4000,7000],
+    index=['earphone','charger','mobile']
+    )
+print(data)
+'''
+import pandas as pd
+df={
+    "product":['laptop','charger','modile'],
+    'brand':['mac','realme','iphone'],
+    
+    ['product'_:_['laptop','mobile',earphone','charger']
+
+
